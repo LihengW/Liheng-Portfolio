@@ -52,12 +52,12 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
+            <StartupProject />
+            <Projects />
+            <Education />
             <Skills />
             <StackProgress />
-            <Education />
             <WorkExperience />
-            <Projects />
-            <StartupProject />
             <Achievement />
             <Blogs />
             <Talks />

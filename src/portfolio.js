@@ -23,10 +23,10 @@ const greeting = {
   username: "Liheng Wei",
   title: "Hi all, I'm Liheng",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A game development programmer with a passion for shoegazing music and romantic movies"
   ),
   resumeLink:
-    "", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1qZHN3e1UUlKCqS_QgrvkOx5gAly2cBwU/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -41,77 +41,179 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Projects",
+  subtitle: "Let's see what I've done!",
+  projects: [
+    {
+      image: require("./assets/images/MusicVisualization.png"),
+      projectName: "XR Music Visualization Experience",
+      projectDesc: "A collaboration between USC and Sony Pictures Entertainment. The project aims to develop an interactive, editable, and immersive music visualization system. Within this XR experience, users can intuitively grasp professional music concepts and explore music composition in a personalized and engaging way.",
+      footerLink: [
+        {
+          name: "Presentation & Demo video",
+          url: "https://docs.google.com/presentation/d/11V0ECA-sgVmk-tzGOmHO5QTwAZdZMU6jcJezDuTSM-0/edit?usp=sharing"
+        },
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/LihengW/MusicVisualization"
+        },
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/deferredrender.png"),
+      projectName: "Tiled Deferred Rendering Support in Prime Engine",
+      projectDesc: "Implemented a full deferred rendering pipeline along with tiled deferred rendering optimizations based on Prime Engine, a custom C++ engine. The system uses OpenGL as the graphics API and CGGL as the OpenGL wrapper to build the deferred rendering workflow. Since CGGL does not support compute shaders, I developed an alternative solution using pixel-based tile information masks. Additionally, I implemented several debugging tools and performance optimizations.",
+      footerLink: [
+        {
+          name: "MileStone Video (Code Review)",
+          url: "https://youtu.be/RuhRq3YNMEU"
+        },
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/LihengW/MusicVisualization"
+        },
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/poy.png"),
+      projectName: "Prism of You",
+      projectDesc: "USC MFA Project: A sandbox creature-raising game. I served as a Gameplay Engineer, primarily responsible for designing and implementing behavior patterns for various types of creatures (characters). I developed behavior tree nodes for different species to enable specific actions such as jumping, spiral spinning, and zigzag movement. Additionally, I implemented partial character morphing features, including writing a dissolve shader and supporting physics-based interactions.",
+      footerLink: [
+        {
+          name: "Steam Webpage",
+          url: "https://store.steampowered.com/app/3613920/Prism_of_You/"
+        },
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/penguin.png"),
+      projectName: "Penguin Adventure",
+      projectDesc: "Penguin Adventure is a 3D platformer that combines a ragdoll system with a traditional animation system. The game centers around controlling a drunken penguin as it searches for its way home, with players independently managing each foot to maintain rhythm, balance, and direction while avoiding a variety of comical hazards. I served as the Lead Engineer on the project, primarily responsible for developing the character gameplay system, including ragdoll and animation blending, integrating the animation state machine with the physics system, and enabling environmental physics interactions.",
+      footerLink: [
+        {
+          name: "Trailer",
+          url: "https://youtu.be/Vtw8wW0ARY4"
+        },
+        {
+          name: "Release Version Download",
+          url: "https://drive.google.com/file/d/1p-ctCZKKxAeyyRrZREeMr1yXmaxDDXAl/view?usp=sharing"
+        },
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/Splatoon.png"),
+      projectName: "Burst of Color",
+      projectDesc: "An independent project focused on replicating the core mechanics of Splatoon while enhancing both graphical expression and gameplay systems. Developed key game logic primarily in C++ to optimize performance and ensure scalability.",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/LihengW/Splatoon_UE"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/no_where_to_escape.png"),
+      projectName: "Nowhere to Escape",
+      projectDesc: "A strategic game inspired by the classic board game Quoridor, integrating the mechanics of placing physical barriers with elements of the traditional Chinese game Go. Developed and implemented in Unity, combining strategic depth with engaging gameplay dynamics.",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/LihengW/Nowhere_to_Escape"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/CornellBox.png"),
+      projectName: "PathTracing Renderer",
+      projectDesc: "A lightweight program implemented to create visuals using PathTracing technology. This project features a variety of customizable materials, allowing users to modify them according to their design preferences.",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/LihengW/RayTracing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/engine.png"),
+      projectName: "Swirl",
+      projectDesc: "A self-developed game engine project with the goal of creating a lightweight 2D game engine. The project currently features an OpenGL-based 2D renderer, an event system, and a virtual system layer, providing a solid foundation for future expansions.",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/LihengW/Swirl"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Well-rounded game engineer, skilled in building game flows in mainstream engines. very interested in game engines, passionate about optimizing game performance and making new tools.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "♠️ Programming: C++, C#, Python, GLSL..."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("♣️ Graphics APIs: OpenGL, DirectX"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "♥️ GameEngine: Unity, Unreal"
+    ),
+    emoji(
+      "♦️ Data Analysis: Pytorch, Tensorflow, R..."
     )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
+softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "Unreal Engine",
+      fontAwesomeClassname: "fas fa-gamepad"
+    },
+    {
+      skillName: "C#",
+      fontAwesomeClassname: "fas fa-hashtag"
+    },
+    {
+      skillName: "Unity",
+      fontAwesomeClassname: "fab fa-unity"
+    },
+    {
+      skillName: "HLSL",
+      fontAwesomeClassname: "fas fa-image"
+    },
+    {
+      skillName: "Pytorch/tensorflow",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -122,23 +224,34 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Southern California",
+      logo: require("./assets/images/USC_Icon.png"),
+      subHeader: "Master of Science in Computer Science Game Development",
+      duration: "September 2024 - Present",
+      desc: "Learning specialized knowledge in both game development and game design and participating in several game/transmedia experience programs",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Mainly use Unreal Engine and learned a lot about game engine development.",
+        "Work as game engineer in several projects."
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Huazhong University of Science and Technology",
+      logo: require("./assets/images/Hust_Icon.png"),
+      subHeader: "Master of Science in Computer Science",
+      duration: "September 2021 - June 2024",
+      desc: "Mainly focused on researches related to deep learning applications in the medical field, Studied in Embedded and Pervasive Computing Lab in HUST ",
+      descBullets: ["constructed a knowledge graph-based assisted diagnosis and treatment system for depression and a dialog bot.",
+        "propose a multiclassification cancer diagnostic model based on TEP-RNA gene fragments and graph neural networks."
+      ]
+    },
+    {
+      schoolName: "Huazhong University of Science and Technology",
+      logo: require("./assets/images/Hust_Icon.png"),
+      subHeader: "Bachelor of Mathematics",
+      duration: "September 2017 - June 2021",
+      desc: "Ranked top 10% in the program. Took courses about mathematical analysis, linear algebra, differential equation...",
+      descBullets: ["Specialized in computational mathematics and numerical method, took courses about numerical solution of differential equations and numerical approximation..."
+      ]
     }
   ]
 };
@@ -146,7 +259,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -170,29 +283,39 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "GamePlay Engineer Intern",
+      company: "Tencent Games",
+      companylogo: require("./assets/images/Tencent.png"),
+      date: "Jun 2025 - Present",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "GamePlay Engineer",
+        "Mobile Fighting Game",
+        "Melee System",
+      ]
+    },
+
+    {
+      role: "Game Analyst Intern",
+      company: "Soonyo Technology Co., Ltd.",
+      companylogo: require("./assets/images/xunyou.jpg"),
+      date: "Jul 2021 - Aug 2021",
+      desc: "Managed and analyzed player activity data in a private SQL database to track gameplay behaviors, purchasing patterns, and retention, providing insights to support in-game event planning and product updates for Fishing Champion. Developed an RNN-based monitoring program to detect abnormal user activity and implemented database breakpoints to prevent cheating and abuse.",
+      descBullets: [
+        "Game System Tuning",
+        "Data Analysis"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Analyst Intern",
+      company: "NetEase Games",
+      companylogo: require("./assets/images/netease.jpg"),
+      date: "Jul 2020 - Aug 2020",
+      desc: "Manually classified game items and analyzed player engagement to identify trends and correlations between item purchases and in-game events. Developed a statistical model using XGBoost's Gradient Boosting techniques, achieving 45% prediction accuracy in forecasting top-purchased items from a pool of 8,000.",
+      descBullets: [
+        "Machine Learning",
+        "Data Analysis"
+      ]
     }
   ]
 };
@@ -202,39 +325,6 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -296,7 +386,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -320,7 +410,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -339,7 +429,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -352,7 +442,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -367,19 +457,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in the program I'm doing? Or do you have any questions? Just contact me!",
+  number: "+1-2139945978",
+  email_address: "lihengwe@usc.edu"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "Yukiowei", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

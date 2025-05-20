@@ -2,13 +2,11 @@
 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
-
 <p align="center">
   <kbd>
 <img src="https://user-images.githubusercontent.com/53429438/106779355-e9cd9e80-666c-11eb-9417-8a4b54441bc6.gif"></img>
   </kbd>
 </p>
-
 
 Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
 
@@ -17,6 +15,7 @@ If you'd like to **contribute** and make this much better for other users, have 
 Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 ## Table of Contents
+
 - [Sections](#sections)
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
@@ -30,6 +29,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 - [Contributors](#project-maintainers)
 
 ## Portfolio Sections
+
 ✔️ Summary and About me\
 ✔️ Skills\
 ✔️ Education\
@@ -46,7 +46,6 @@ Created something awesome for your fork of the portfolio and want to share it? F
 
 To view a live example, **[click here](https://developerfolio.js.org/)**.
 
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -58,6 +57,7 @@ node@v10.16.0 or higher
 npm@6.9.0 or higher
 git@2.17.1 or higher
 ```
+
 ### Docker Commands
 
 ```
@@ -65,8 +65,7 @@ git@2.17.1 or higher
 2) RUN IMAGE: docker run -t -p 3000:3000 developerfolio:latest
 ```
 
-
-## How To Use 
+## How To Use
 
 From your command line, clone and run developerFolio:
 
@@ -187,9 +186,10 @@ const blogSection = { .... }
 const contactInfo = { .... }
 
 const twitterDetails = { ... }
-
 ```
+
 #### Resume upload
+
 To upload your own resume, simply upload a pdf to `src/containers/greeting/resume` and rename the pdf to `resume.pdf`. 
 
 #### Using Emojis
@@ -201,6 +201,7 @@ For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` functi
 You can choose a Lottie and download it in json format from sites like [this](https://lottiefiles.com/). In `src/assets/lottie`, replace the Lottie json file you want to alter with the same file name. If you want to change the Lottie options, go to `src/components/displayLottie/DisplayLottie.js` and change the `defaultOptions` object, you can refer [lottie-react docs](https://www.npmjs.com/package/lottie-react) for more info on the `defaultOptions` object.
 
 #### Adding Twitter Time line to your Page
+
 Insert your Twitter username in `portfolio.js` to show your recent activity on your page.
 
 ```javascript
@@ -208,13 +209,16 @@ const twitterDetails = {
   userName : "Your Twitter Username"
 };
 ```
+
 Note: Don't use `@` symbol when adding username.
 
 ## Deployment
+
 When you are done with the setup, you should host your website online.
 We highly recommend to read through the [Deploying on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) docs for React.
 
 #### Configuring GitHub Actions (Recommended)
+
 First you should enable, GitHub Actions for the repository you use.
 
 The Profile and the Repository information from GitHub is only created at the time of deploy and the site needs to be redeployed if those information needs to be updated. So, a configurable [CRON Job](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events) is setup which deploys your site every week, so that once you update your profile on GitHub it is shown on your portfolio. You can also trigger it manually using `workflow_dispatch` event, see [this guide](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch) on how to do that.
@@ -241,8 +245,7 @@ You could also host directly with Netlify by linking your own repository.
 
 For more information, read [hosting on Netlify](https://create-react-app.dev/docs/deployment/#netlify).
 
-
-## Technologies Used 
+## Technologies Used
 
 - [React](https://reactjs.org/)
 - [graphql](https://graphql.org/)
@@ -253,11 +256,12 @@ For more information, read [hosting on Netlify](https://create-react-app.dev/doc
 - [color-thief](https://github.com/lokesh/color-thief)
 
 ## Illustrations
+
 - [UnDraw](https://undraw.co/illustrations)
 - [Lottie by Oblikweare](https://lottiefiles.com/oblikweare)
 
-
 ## For the Future
+
 If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 - Connect with LinkedIn to get Summary, Skills, Education and Experience
@@ -266,7 +270,7 @@ If you can help us with these. Please don't hesitate to open a [pull request](ht
 
 - Add More Sections
 
-## Project Maintainers 
+## Project Maintainers
 
 <table>
   <tr>
@@ -277,13 +281,16 @@ If you can help us with these. Please don't hesitate to open a [pull request](ht
   </tr>
 </table>
 
-## Contributors 
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore-start -->
+
 <!-- markdownlint-disable -->
+
 <table>
   <tbody>
     <tr>
@@ -374,6 +381,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- markdownlint-restore -->
+
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
